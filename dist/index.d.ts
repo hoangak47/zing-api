@@ -14,6 +14,7 @@ declare class ZingMp3Api {
     private hashListMV;
     private hashSearchAll;
     private hashSearchAllPlaylist;
+    private hashSearchAllVideo;
     private hashSuggest;
     private getCookie;
     private requestZingMp3;
@@ -30,6 +31,7 @@ declare class ZingMp3Api {
     getListMV(id: string, page: string, count: string): Promise<any>;
     getSearchAll(name: string, page: string, count: string): Promise<any>;
     getSearchAllPlaylist(name: string, page: string, count: string): Promise<any>;
+    getSearchAllVideo(name: string, page: string, count: string): Promise<any>;
     getSuggest(): Promise<any>;
     getCategoryMV(id: string): Promise<any>;
     getVideo(videoId: string): Promise<any>;
