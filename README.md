@@ -1,14 +1,12 @@
 # Zing Mp3 API
 
-### Music Player Use ZingMp3 Api
-[https://github.com/phamhiep2506/music-player](https://github.com/phamhiep2506/music-player)
 
-### Demo
-[https://music-player-pink.vercel.app](https://music-player-pink.vercel.app)
+### Original packages
+[https://www.npmjs.com/package/zingmp3-api-full](https://www.npmjs.com/package/zingmp3-api-full)
 
 ### ⚠️ Please create server use module **zingmp3-api-full** + **Node.js** + **Express.js**
 
-### Based module [ZingMp3API](https://github.com/whoant/ZingMp3API). Thank whoant 😘
+### Based module [ZingMp3API](https://github.com/whoant/ZingMp3API).
 
 ## Installation
 ```bash
@@ -127,6 +125,38 @@ ZingMp3.getCategoryMV("IWZ9Z08I").then((data) => {
 > param {id}
 ```javascript
 ZingMp3.getVideo("ZWEW9WI8").then((data) => {
+  console.log(data)
+})
+```
+
+## My update from the original file
+### Search Song All
+> param {sontungmtp, 1, 18}
+```javascript
+ZingMp3.searchAll("sontungmtp","1","18").then((data) => {
+  console.log(data)
+})
+```
+
+### Search Playlist All
+> param {sontungmtp, 1, 18}
+```javascript
+ZingMp3.searchAllPlaylist("sontungmtp","1","18").then((data) => {
+  console.log(data)
+})
+```
+
+### Search MV All
+> param {sontungmtp, 1, 18}
+```javascript
+ZingMp3.searchAllVideo("sontungmtp","1","18").then((data) => {
+  console.log(data)
+})
+```
+
+### Search Suggest
+```javascript
+ZingMp3.Suggest().then((data) => {
   console.log(data)
 })
 ```
