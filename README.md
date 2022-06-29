@@ -8,6 +8,18 @@
 
 ### Based module [ZingMp3API](https://github.com/whoant/ZingMp3API).
 
+# Zing Mp3 API
+
+### Music Player Use ZingMp3 Api
+[https://github.com/phamhiep2506/music-player](https://github.com/phamhiep2506/music-player)
+
+### Demo
+[https://music-player-pink.vercel.app](https://music-player-pink.vercel.app)
+
+### ⚠️ Please create server use module **zingmp3-api-full** + **Node.js** + **Express.js**
+
+### Based module [ZingMp3API](https://github.com/whoant/ZingMp3API). Thank whoant 😘
+
 ## Installation
 ```bash
 npm i zingmp3-api-full
@@ -44,10 +56,9 @@ ZingMp3.getDetailPlaylist("ZWZB969E").then((data) => {
 ```
 
 ### Get Home
-> param {page} : 1, 2, 3, 4...
 
 ```javascript
-ZingMp3.getHome("1").then((data) => {
+ZingMp3.getHome().then((data) => {
   console.log(data)
 })
 ```
@@ -128,6 +139,7 @@ ZingMp3.getVideo("ZWEW9WI8").then((data) => {
   console.log(data)
 })
 ```
+
 
 ## My update from the original file
 ### Search Song All
